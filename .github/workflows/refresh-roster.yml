@@ -1,0 +1,51 @@
+name: Refresh Roster Data
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-roster:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Fetch roster and gear JSON
+        continue-on-error: true
+        env:
+          WOWUTILS_API_KEY: ${{ secrets.WOWUTILS_API_KEY }}
+          BLIZZ_API_CLIENT_ID: ${{ secrets.BLIZZ_API_CLIENT_ID }}
+          BLIZZ_API_CLIENT_SECRET: ${{ secrets.BLIZZ_API_CLIENT_SECRET }}
+          BLIZZ_REGION: us
+          BLIZZ_LOCALE: en_US
+          BLIZZ_REQUEST_DELAY_MS: 250
+        run: npm run fetch:roster
+
+      - name: Commit updated gear data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/gear.json
+          git add frontend/public/data/characters.csv
+          git add frontend/public/data/logs.json
+          if git diff --cached --quiet; then
+            echo "No gear/csv/log changes to commit"
+          else
+            git commit -m "chore: refresh roster gear data, csv, and logs"
+            git push
+          fi
