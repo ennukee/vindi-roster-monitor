@@ -1,7 +1,82 @@
 {
-  "updatedAt": "2026-08-19T18:19:00.748Z",
+  "updatedAt": "2026-08-19T19:17:59.864Z",
   "retentionDays": 7,
   "runs": [
+    {
+      "runId": "1787167078970-cdjtg8v4",
+      "startedAt": "2026-08-19T19:17:58.970Z",
+      "finishedAt": "2026-08-19T19:17:59.827Z",
+      "success": false,
+      "error": "Blizzard OAuth failed: HTTP 503 Service Temporarily Unavailable: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "actions": [
+        {
+          "timestamp": "2026-08-19T19:17:58.971Z",
+          "step": "run-start",
+          "message": "Started roster pipeline",
+          "meta": {
+            "region": "us",
+            "locale": "en_US",
+            "delayMs": 250,
+            "retentionDays": 7
+          }
+        },
+        {
+          "timestamp": "2026-08-19T19:17:58.971Z",
+          "step": "wowutils-fetch",
+          "message": "Fetching wowutils roster",
+          "meta": {}
+        },
+        {
+          "timestamp": "2026-08-19T19:17:59.505Z",
+          "step": "wowutils-fetch",
+          "message": "Received wowutils roster response",
+          "meta": {
+            "status": 200
+          }
+        },
+        {
+          "timestamp": "2026-08-19T19:17:59.615Z",
+          "step": "wowutils-parse",
+          "message": "Parsed wowutils roster JSON",
+          "meta": {}
+        },
+        {
+          "timestamp": "2026-08-19T19:17:59.615Z",
+          "step": "roster-filter",
+          "message": "Filtered roster to main/alt characters",
+          "meta": {
+            "members": 25,
+            "characters": 63
+          }
+        },
+        {
+          "timestamp": "2026-08-19T19:17:59.615Z",
+          "step": "blizzard-oauth",
+          "message": "Requesting Blizzard OAuth token",
+          "meta": {
+            "region": "us"
+          }
+        },
+        {
+          "timestamp": "2026-08-19T19:17:59.827Z",
+          "step": "run-error",
+          "message": "Pipeline failed",
+          "meta": {
+            "error": "Blizzard OAuth failed: HTTP 503 Service Temporarily Unavailable: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n"
+          }
+        },
+        {
+          "timestamp": "2026-08-19T19:17:59.827Z",
+          "step": "run-end",
+          "message": "Finished roster pipeline",
+          "meta": {
+            "success": false,
+            "error": "Blizzard OAuth failed: HTTP 503 Service Temporarily Unavailable: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n"
+          }
+        }
+      ],
+      "summary": {}
+    },
     {
       "runId": "1787163499500-omaxvt26",
       "startedAt": "2026-08-19T18:18:19.500Z",
