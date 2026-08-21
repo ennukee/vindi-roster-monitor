@@ -190,15 +190,17 @@ function normalizeGearResponse(character, equipmentData) {
 		? equipmentData.equipped_items
 		: [];
 	const excludedAverageSlots = new Set(["TABARD", "SHIRT"]);
-	const normalizedClass = String(character?.class || "").toLowerCase();
-	const normalizedSpec = String(character?.spec || "").toLowerCase();
-	const isFuryWarrior = normalizedClass === "warrior" && normalizedSpec === "fury";
 
 	const getSlotType = (item) => String(item?.slot?.type || item?.slot?.name || "").toUpperCase();
 	const getItemLevel = (item) => (typeof item?.level?.value === "number" ? item.level.value : null);
 	const isTwoHandWeapon = (item) => {
 		const inventoryType = String(item?.inventory_type?.type || item?.inventory_type?.name || "").toUpperCase();
-		return inventoryType.includes("2H") || inventoryType.includes("TWOH");
+		return (
+			inventoryType.includes("2H") ||
+			inventoryType.includes("TWOH") ||
+			inventoryType.includes("RANGED") ||
+			inventoryType.includes("THROWN")
+		);
 	};
 
 	let totalItemLevel = 0;
@@ -237,7 +239,7 @@ function normalizeGearResponse(character, equipmentData) {
 		totalItemLevel += mainHandLevel + offHandLevel;
 	} else if (mainHandLevel !== null) {
 		totalItemLevel += mainHandLevel;
-		if (isTwoHandWeapon(mainHand) && !isFuryWarrior) {
+		if (isTwoHandWeapon(mainHand)) {
 			totalItemLevel += mainHandLevel;
 		}
 	} else if (offHandLevel !== null) {
