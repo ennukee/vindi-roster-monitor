@@ -189,6 +189,7 @@ function normalizeGearResponse(character, equipmentData) {
 	const equippedItems = Array.isArray(equipmentData?.equipped_items)
 		? equipmentData.equipped_items
 		: [];
+	const excludedAverageSlots = new Set(["TABARD", "SHIRT"]);
 	const normalizedClass = String(character?.class || "").toLowerCase();
 	const normalizedSpec = String(character?.spec || "").toLowerCase();
 	const isFuryWarrior = normalizedClass === "warrior" && normalizedSpec === "fury";
@@ -212,7 +213,7 @@ function normalizeGearResponse(character, equipmentData) {
 			continue;
 		}
 
-		if (slotType === "TABARD") {
+		if (excludedAverageSlots.has(slotType)) {
 			continue;
 		}
 
