@@ -1,7 +1,1737 @@
 {
-  "updatedAt": "2026-10-18T08:04:39.803Z",
+  "updatedAt": "2026-10-18T09:04:11.792Z",
   "retentionDays": 7,
   "runs": [
+    {
+      "runId": "1792314203990-0t8b9rje",
+      "startedAt": "2026-10-18T09:03:23.990Z",
+      "finishedAt": "2026-10-18T09:04:11.739Z",
+      "success": true,
+      "error": null,
+      "actions": [
+        {
+          "timestamp": "2026-10-18T09:03:23.990Z",
+          "step": "run-start",
+          "message": "Started roster pipeline",
+          "meta": {
+            "region": "us",
+            "locale": "en_US",
+            "delayMs": 250,
+            "retentionDays": 7
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:23.990Z",
+          "step": "wowutils-fetch",
+          "message": "Fetching wowutils roster",
+          "meta": {}
+        },
+        {
+          "timestamp": "2026-10-18T09:03:24.580Z",
+          "step": "wowutils-fetch",
+          "message": "Received wowutils roster response",
+          "meta": {
+            "status": 200
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:24.707Z",
+          "step": "wowutils-parse",
+          "message": "Parsed wowutils roster JSON",
+          "meta": {}
+        },
+        {
+          "timestamp": "2026-10-18T09:03:24.707Z",
+          "step": "roster-filter",
+          "message": "Filtered roster to main/alt characters",
+          "meta": {
+            "members": 25,
+            "characters": 68
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:24.707Z",
+          "step": "blizzard-oauth",
+          "message": "Requesting Blizzard OAuth token",
+          "meta": {
+            "region": "us"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:25.016Z",
+          "step": "blizzard-oauth",
+          "message": "Received Blizzard OAuth token",
+          "meta": {}
+        },
+        {
+          "timestamp": "2026-10-18T09:03:25.016Z",
+          "step": "enrichment",
+          "message": "Starting gear enrichment",
+          "meta": {
+            "members": 25,
+            "characters": 68
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:25.016Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216411279_pm2clsz2j",
+            "displayName": "Rad",
+            "characterCount": 5
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:25.016Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "radel-icecrown",
+            "name": "Radel",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:25.510Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "radel-icecrown",
+            "name": "Radel",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:26.097Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "radpal-icecrown",
+            "name": "Radpal",
+            "realm": "icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:26.229Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "radpal-icecrown",
+            "name": "Radpal",
+            "realm": "icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:26.807Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "radmonk-icecrown",
+            "name": "Radmonk",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:27.008Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "radmonk-icecrown",
+            "name": "Radmonk",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:27.581Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "raddru-icecrown",
+            "name": "Raddru",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:27.782Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "raddru-icecrown",
+            "name": "Raddru",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:28.283Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "radwar-icecrown",
+            "name": "Radwar",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:28.447Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "radwar-icecrown",
+            "name": "Radwar",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:29.024Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216323679_smo2r57xi",
+            "displayName": "Finest",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:29.024Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "finesthour-icecrown",
+            "name": "Finesthour",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:29.161Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "finesthour-icecrown",
+            "name": "Finesthour",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:29.713Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1781743100147_iulkrccr1",
+            "displayName": "Horchata",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:29.713Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "horcchata-tichondrius",
+            "name": "Horcchata",
+            "realm": "Tichondrius"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:29.858Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "horcchata-tichondrius",
+            "name": "Horcchata",
+            "realm": "Tichondrius"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:30.323Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1781743309503_cvkku16k1",
+            "displayName": "Jordan",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:30.323Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "dolldeathh-bleedinghollow",
+            "name": "Dolldeathh",
+            "realm": "Bleeding Hollow"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:30.467Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "dolldeathh-bleedinghollow",
+            "name": "Dolldeathh",
+            "realm": "Bleeding Hollow"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:30.979Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216287942_kq1wwe533",
+            "displayName": "Chicken",
+            "characterCount": 3
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:30.979Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "chickenism-icecrown",
+            "name": "Chickenism",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:31.118Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "chickenism-icecrown",
+            "name": "Chickenism",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:31.684Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "vokerism-icecrown",
+            "name": "Vokerism",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:31.846Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "vokerism-icecrown",
+            "name": "Vokerism",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:32.334Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "priestism-icecrown",
+            "name": "Priestism",
+            "realm": "icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:32.492Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "priestism-icecrown",
+            "name": "Priestism",
+            "realm": "icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:33.041Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1767572969876_rn5ez2dmn",
+            "displayName": "Feen",
+            "characterCount": 3
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:33.041Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "greenashen-stormrage",
+            "name": "Greenashen",
+            "realm": "Stormrage"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:33.149Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "greenashen-stormrage",
+            "name": "Greenashen",
+            "realm": "Stormrage"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:33.687Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "glaeder-tichondrius",
+            "name": "glaeder",
+            "realm": "tichondrius"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:33.860Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "glaeder-tichondrius",
+            "name": "glaeder",
+            "realm": "tichondrius"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:34.336Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "mfeen-stormrage",
+            "name": "mfeen",
+            "realm": "Stormrage"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:34.516Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "mfeen-stormrage",
+            "name": "mfeen",
+            "realm": "Stormrage"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:35.004Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216361768_00n9vuqji",
+            "displayName": "Kovu",
+            "characterCount": 4
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:35.004Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "kovuker-ragnaros",
+            "name": "Kovuker",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:35.159Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "kovuker-ragnaros",
+            "name": "Kovuker",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:35.669Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "kovu-ragnaros",
+            "name": "Kovu",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:35.820Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "kovu-ragnaros",
+            "name": "Kovu",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:36.354Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "kovupally-ragnaros",
+            "name": "Kovupally",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:36.536Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "kovupally-ragnaros",
+            "name": "Kovupally",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:37.025Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "kovundd-ragnaros",
+            "name": "Kovundd",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:37.189Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "kovundd-ragnaros",
+            "name": "Kovundd",
+            "realm": "Ragnaros"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:37.679Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216247921_vlliy12i4",
+            "displayName": "Xaidra",
+            "characterCount": 2
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:37.679Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "xaidra-icecrown",
+            "name": "Xaidra",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:37.820Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "xaidra-icecrown",
+            "name": "Xaidra",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:38.338Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "xaida-onyxia",
+            "name": "Xaida",
+            "realm": "Onyxia"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:38.493Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "xaida-onyxia",
+            "name": "Xaida",
+            "realm": "Onyxia"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:38.998Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216331255_cb22luu4k",
+            "displayName": "Pike",
+            "characterCount": 4
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:38.998Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "hotdogman-lothar",
+            "name": "Hotdogman",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:39.143Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "hotdogman-lothar",
+            "name": "Hotdogman",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:39.629Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "gampshwago-icecrown",
+            "name": "Gampshwago",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:39.802Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "gampshwago-icecrown",
+            "name": "Gampshwago",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:40.287Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "namswoam-icecrown",
+            "name": "Namswoam",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:40.449Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "namswoam-icecrown",
+            "name": "Namswoam",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:41.029Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "miamiganster-icecrown",
+            "name": "Miamiganster",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:41.277Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "miamiganster-icecrown",
+            "name": "Miamiganster",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:41.821Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1763000067630_z8p57awbe",
+            "displayName": "Evac",
+            "characterCount": 2
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:41.821Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "evach-icecrown",
+            "name": "Evach",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:42.002Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "evach-icecrown",
+            "name": "Evach",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:42.546Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "evacdh-hyjal",
+            "name": "Evacdh",
+            "realm": "Hyjal"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:42.707Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "evacdh-hyjal",
+            "name": "Evacdh",
+            "realm": "Hyjal"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:43.236Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216337585_hppej1ihl",
+            "displayName": "Garro",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:43.236Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "garronan-icecrown",
+            "name": "Garronan",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:43.378Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "garronan-icecrown",
+            "name": "Garronan",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:43.900Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216446328_qdqdt6rbf",
+            "displayName": "Zalea",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:43.900Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "zalea-icecrown",
+            "name": "Zalea",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:44.043Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "zalea-icecrown",
+            "name": "Zalea",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:44.603Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1785285351142_7ebkvjj6h",
+            "displayName": "Prof",
+            "characterCount": 2
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:44.603Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "omegadnc-area52",
+            "name": "Omegadnc",
+            "realm": "Area 52"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:44.776Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "omegadnc-area52",
+            "name": "Omegadnc",
+            "realm": "Area 52"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:45.393Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "haireater-area52",
+            "name": "Haireater",
+            "realm": "Area 52"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:45.572Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "haireater-area52",
+            "name": "Haireater",
+            "realm": "Area 52"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:46.112Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1781745234340_o5xj0a79o",
+            "displayName": "Rice",
+            "characterCount": 4
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:46.112Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bestricer-frostmane",
+            "name": "Bestricer",
+            "realm": "Frostmane"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:46.274Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bestricer-frostmane",
+            "name": "Bestricer",
+            "realm": "Frostmane"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:46.758Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "ricemachnedk-lothar",
+            "name": "Ricemachnedk",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:46.934Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "ricemachnedk-lothar",
+            "name": "Ricemachnedk",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:47.452Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bestricer-lothar",
+            "name": "Bestricer",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:47.596Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bestricer-lothar",
+            "name": "Bestricer",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:48.104Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "ricemachinex-lothar",
+            "name": "Ricemachinex",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:48.270Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "ricemachinex-lothar",
+            "name": "Ricemachinex",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:48.770Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1759366176783_piimetwsm",
+            "displayName": "Mochi",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:48.770Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "mochikat-icecrown",
+            "name": "Mochikat",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:48.960Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "mochikat-icecrown",
+            "name": "Mochikat",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:49.472Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1773413029902_gbxr6zkxs",
+            "displayName": "Bus",
+            "characterCount": 6
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:49.472Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bus-onyxia",
+            "name": "Bus",
+            "realm": "onyxia"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:49.643Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bus-onyxia",
+            "name": "Bus",
+            "realm": "onyxia"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:50.188Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bus-arygos",
+            "name": "Bus",
+            "realm": "arygos"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:50.340Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bus-arygos",
+            "name": "Bus",
+            "realm": "arygos"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:50.866Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bus-bladefist",
+            "name": "Bus",
+            "realm": "bladefist"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:51.077Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bus-bladefist",
+            "name": "Bus",
+            "realm": "bladefist"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:51.608Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bus-anetheron",
+            "name": "Bus",
+            "realm": "Anetheron"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:51.769Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bus-anetheron",
+            "name": "Bus",
+            "realm": "Anetheron"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:52.356Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bus-garona",
+            "name": "Bus",
+            "realm": "garona"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:52.491Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bus-garona",
+            "name": "Bus",
+            "realm": "garona"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:52.974Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "bus-icecrown",
+            "name": "Bus",
+            "realm": "icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:53.126Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "bus-icecrown",
+            "name": "Bus",
+            "realm": "icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:53.635Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216240800_8h0v1pp4a",
+            "displayName": "Clandon",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:53.635Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "clandon-icecrown",
+            "name": "Clandon",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:53.789Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "clandon-icecrown",
+            "name": "Clandon",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:54.310Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216424251_v5wyypngs",
+            "displayName": "Rye",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:54.310Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "ryeshot-icecrown",
+            "name": "Ryeshot",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:54.449Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "ryeshot-icecrown",
+            "name": "Ryeshot",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:54.994Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216307943_b0zfc9fks",
+            "displayName": "KE",
+            "characterCount": 6
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:54.994Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "mutilatee-icecrown",
+            "name": "Mutilatee",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:55.132Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "mutilatee-icecrown",
+            "name": "Mutilatee",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:55.605Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "deevinestorm-illidan",
+            "name": "Deevinestorm",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:55.750Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "deevinestorm-illidan",
+            "name": "Deevinestorm",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:56.236Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "whirlwindd-illidan",
+            "name": "whirlwindd",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:56.398Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "whirlwindd-illidan",
+            "name": "whirlwindd",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:56.969Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "offmeta-illidan",
+            "name": "offmeta",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:57.113Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "offmeta-illidan",
+            "name": "offmeta",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:57.674Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "doomwinds-icecrown",
+            "name": "Doomwinds",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:57.823Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "doomwinds-icecrown",
+            "name": "Doomwinds",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:58.319Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "facemesh-illidan",
+            "name": "Facemesh",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:58.484Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "facemesh-illidan",
+            "name": "Facemesh",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:58.996Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1767573157247_9jd3tqrfa",
+            "displayName": "Ghost",
+            "characterCount": 3
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:58.996Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "ghostsham-lothar",
+            "name": "Ghostsham",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:59.187Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "ghostsham-lothar",
+            "name": "Ghostsham",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:59.736Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "ghðst-lothar",
+            "name": "Ghðst",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:03:59.815Z",
+          "step": "character-fetch-error",
+          "message": "Character fetch failed",
+          "meta": {
+            "playerId": "ghðst-lothar",
+            "name": "Ghðst",
+            "realm": "Lothar",
+            "error": "HTTP 404 Not Found: {\"code\":404,\"type\":\"BLZWEBAPI00000404\",\"detail\":\"Not Found\"}"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:00.066Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "istariel-lothar",
+            "name": "Istariel",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:00.245Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "istariel-lothar",
+            "name": "Istariel",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:00.739Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1783627646029_5w8ckr7hs",
+            "displayName": "Hubbles",
+            "characterCount": 2
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:00.739Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "hubbles-icecrown",
+            "name": "Hubbles",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:00.899Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "hubbles-icecrown",
+            "name": "Hubbles",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:01.481Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "hububbles-icecrown",
+            "name": "Hububbles",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:01.640Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "hububbles-icecrown",
+            "name": "Hububbles",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:02.171Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1781743235147_9k6iszen7",
+            "displayName": "Gachi",
+            "characterCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:02.171Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "gachiwl-icecrown",
+            "name": "Gachiwl",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:02.316Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "gachiwl-icecrown",
+            "name": "Gachiwl",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:02.786Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1755216388913_0s8m6emsn",
+            "displayName": "Oregano",
+            "characterCount": 6
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:02.786Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "oreganow-icecrown",
+            "name": "Oreganow",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:02.969Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "oreganow-icecrown",
+            "name": "Oreganow",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:03.549Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "oreganosh-icecrown",
+            "name": "Oreganosh",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:03.701Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "oreganosh-icecrown",
+            "name": "Oreganosh",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:04.247Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "oreganodk-icecrown",
+            "name": "Oreganodk",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:04.424Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "oreganodk-icecrown",
+            "name": "Oreganodk",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:04.951Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "oreganomk-icecrown",
+            "name": "Oreganomk",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:05.145Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "oreganomk-icecrown",
+            "name": "Oreganomk",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:05.630Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "oreganor-icecrown",
+            "name": "Oreganor",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:05.785Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "oreganor-icecrown",
+            "name": "Oreganor",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:06.293Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "oreganom-icecrown",
+            "name": "Oreganom",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:06.462Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "oreganom-icecrown",
+            "name": "Oreganom",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:06.930Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1781743198623_s16k6jjjn",
+            "displayName": "Phungus",
+            "characterCount": 4
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:06.930Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "phungerclap-icecrown",
+            "name": "Phungerclap",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:07.094Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "phungerclap-icecrown",
+            "name": "Phungerclap",
+            "realm": "Icecrown"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:07.579Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "phungus-tichondrius",
+            "name": "Phungus",
+            "realm": "Tichondrius"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:07.739Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "phungus-tichondrius",
+            "name": "Phungus",
+            "realm": "Tichondrius"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:08.293Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "phungores-illidan",
+            "name": "Phungores",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:08.466Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "phungores-illidan",
+            "name": "Phungores",
+            "realm": "Illidan"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:09.004Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "phungku-area52",
+            "name": "Phungku",
+            "realm": "Area 52"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:09.172Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "phungku-area52",
+            "name": "Phungku",
+            "realm": "Area 52"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:09.650Z",
+          "step": "member-enrichment",
+          "message": "Processing member",
+          "meta": {
+            "memberId": "member_1781743280422_5624k6p1p",
+            "displayName": "Keatz",
+            "characterCount": 3
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:09.650Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "keattz-lothar",
+            "name": "Keattz",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:09.809Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "keattz-lothar",
+            "name": "Keattz",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:10.386Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "keatzz-lothar",
+            "name": "Keatzz",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:10.535Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "keatzz-lothar",
+            "name": "Keatzz",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.027Z",
+          "step": "character-fetch",
+          "message": "Fetching character equipment",
+          "meta": {
+            "playerId": "keattzxd-lothar",
+            "name": "Keattzxd",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.178Z",
+          "step": "character-fetch",
+          "message": "Fetched character equipment",
+          "meta": {
+            "playerId": "keattzxd-lothar",
+            "name": "Keattzxd",
+            "realm": "Lothar"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.708Z",
+          "step": "enrichment",
+          "message": "Completed gear enrichment",
+          "meta": {
+            "queriedCharacters": 67,
+            "failedLookupCount": 1
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.709Z",
+          "step": "private-write",
+          "message": "Wrote private filtered roster",
+          "meta": {
+            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/backend/data/roster.filtered.json"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.712Z",
+          "step": "public-write",
+          "message": "Wrote public gear snapshot",
+          "meta": {
+            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/frontend/public/data/gear.json"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.738Z",
+          "step": "public-write",
+          "message": "Wrote public character CSV",
+          "meta": {
+            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/frontend/public/data/characters.csv"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T09:04:11.739Z",
+          "step": "run-end",
+          "message": "Finished roster pipeline",
+          "meta": {
+            "success": true,
+            "error": null
+          }
+        }
+      ],
+      "summary": {
+        "memberCount": 25,
+        "characterCount": 68,
+        "failedLookupCount": 1
+      }
+    },
     {
       "runId": "1792310631938-iggyp49g",
       "startedAt": "2026-10-18T08:03:51.938Z",
@@ -285615,3468 +287345,6 @@
         },
         {
           "timestamp": "2026-10-11T10:04:14.324Z",
-          "step": "run-end",
-          "message": "Finished roster pipeline",
-          "meta": {
-            "success": true,
-            "error": null
-          }
-        }
-      ],
-      "summary": {
-        "memberCount": 25,
-        "characterCount": 68,
-        "failedLookupCount": 2
-      }
-    },
-    {
-      "runId": "1791709416936-ku59u3jz",
-      "startedAt": "2026-10-11T09:03:36.936Z",
-      "finishedAt": "2026-10-11T09:04:21.022Z",
-      "success": true,
-      "error": null,
-      "actions": [
-        {
-          "timestamp": "2026-10-11T09:03:36.936Z",
-          "step": "run-start",
-          "message": "Started roster pipeline",
-          "meta": {
-            "region": "us",
-            "locale": "en_US",
-            "delayMs": 250,
-            "retentionDays": 7
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:36.936Z",
-          "step": "wowutils-fetch",
-          "message": "Fetching wowutils roster",
-          "meta": {}
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.450Z",
-          "step": "wowutils-fetch",
-          "message": "Received wowutils roster response",
-          "meta": {
-            "status": 200
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.557Z",
-          "step": "wowutils-parse",
-          "message": "Parsed wowutils roster JSON",
-          "meta": {}
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.557Z",
-          "step": "roster-filter",
-          "message": "Filtered roster to main/alt characters",
-          "meta": {
-            "members": 25,
-            "characters": 68
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.557Z",
-          "step": "blizzard-oauth",
-          "message": "Requesting Blizzard OAuth token",
-          "meta": {
-            "region": "us"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.925Z",
-          "step": "blizzard-oauth",
-          "message": "Received Blizzard OAuth token",
-          "meta": {}
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.926Z",
-          "step": "enrichment",
-          "message": "Starting gear enrichment",
-          "meta": {
-            "members": 25,
-            "characters": 68
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.926Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216411279_pm2clsz2j",
-            "displayName": "Rad",
-            "characterCount": 5
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:37.926Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radel-icecrown",
-            "name": "Radel",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:38.467Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radel-icecrown",
-            "name": "Radel",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:39.021Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radpal-icecrown",
-            "name": "Radpal",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:39.166Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radpal-icecrown",
-            "name": "Radpal",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:39.698Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radmonk-icecrown",
-            "name": "Radmonk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:39.857Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radmonk-icecrown",
-            "name": "Radmonk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:40.426Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "raddru-icecrown",
-            "name": "Raddru",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:40.593Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "raddru-icecrown",
-            "name": "Raddru",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:41.061Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radwar-icecrown",
-            "name": "Radwar",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:41.225Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radwar-icecrown",
-            "name": "Radwar",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:41.691Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216323679_smo2r57xi",
-            "displayName": "Finest",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:41.691Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "finesthour-icecrown",
-            "name": "Finesthour",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:41.853Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "finesthour-icecrown",
-            "name": "Finesthour",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:42.421Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743100147_iulkrccr1",
-            "displayName": "Horchata",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:42.421Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "horcchata-tichondrius",
-            "name": "Horcchata",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:42.569Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "horcchata-tichondrius",
-            "name": "Horcchata",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.032Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743309503_cvkku16k1",
-            "displayName": "Jordan",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.032Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "jordh-bleedinghollow",
-            "name": "Jordh",
-            "realm": "Bleeding Hollow"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.095Z",
-          "step": "character-fetch-error",
-          "message": "Character fetch failed",
-          "meta": {
-            "playerId": "jordh-bleedinghollow",
-            "name": "Jordh",
-            "realm": "Bleeding Hollow",
-            "error": "HTTP 404 Not Found: {\"code\":404,\"type\":\"BLZWEBAPI00000404\",\"detail\":\"Not Found\"}"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.345Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216287942_kq1wwe533",
-            "displayName": "Chicken",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.345Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "chickenism-icecrown",
-            "name": "Chickenism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.491Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "chickenism-icecrown",
-            "name": "Chickenism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:43.990Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "vokerism-icecrown",
-            "name": "Vokerism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:44.190Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "vokerism-icecrown",
-            "name": "Vokerism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:44.660Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "priestism-icecrown",
-            "name": "Priestism",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:44.791Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "priestism-icecrown",
-            "name": "Priestism",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:45.309Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1767572969876_rn5ez2dmn",
-            "displayName": "Feen",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:45.309Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "greenashen-stormrage",
-            "name": "Greenashen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:45.431Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "greenashen-stormrage",
-            "name": "Greenashen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:45.940Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "glaeder-tichondrius",
-            "name": "glaeder",
-            "realm": "tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:46.106Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "glaeder-tichondrius",
-            "name": "glaeder",
-            "realm": "tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:46.609Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "mfeen-stormrage",
-            "name": "mfeen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:46.735Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "mfeen-stormrage",
-            "name": "mfeen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:47.256Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216361768_00n9vuqji",
-            "displayName": "Kovu",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:47.256Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovuker-ragnaros",
-            "name": "Kovuker",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:47.389Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovuker-ragnaros",
-            "name": "Kovuker",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:47.870Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovu-ragnaros",
-            "name": "Kovu",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:48.049Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovu-ragnaros",
-            "name": "Kovu",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:48.563Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovupally-ragnaros",
-            "name": "Kovupally",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:48.728Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovupally-ragnaros",
-            "name": "Kovupally",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:49.160Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovundd-ragnaros",
-            "name": "Kovundd",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:49.341Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovundd-ragnaros",
-            "name": "Kovundd",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:49.832Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216247921_vlliy12i4",
-            "displayName": "Xaidra",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:49.832Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "xaidra-icecrown",
-            "name": "Xaidra",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:49.992Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "xaidra-icecrown",
-            "name": "Xaidra",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:50.519Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "xaida-onyxia",
-            "name": "Xaida",
-            "realm": "Onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:50.683Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "xaida-onyxia",
-            "name": "Xaida",
-            "realm": "Onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:51.153Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216331255_cb22luu4k",
-            "displayName": "Pike",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:51.153Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "hotdogman-lothar",
-            "name": "Hotdogman",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:51.266Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "hotdogman-lothar",
-            "name": "Hotdogman",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:51.741Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "gampshwago-icecrown",
-            "name": "Gampshwago",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:51.909Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "gampshwago-icecrown",
-            "name": "Gampshwago",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:52.397Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "namswoam-icecrown",
-            "name": "Namswoam",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:52.527Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "namswoam-icecrown",
-            "name": "Namswoam",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:53.014Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "miamiganster-icecrown",
-            "name": "Miamiganster",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:53.165Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "miamiganster-icecrown",
-            "name": "Miamiganster",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:53.649Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1763000067630_z8p57awbe",
-            "displayName": "Evac",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:53.650Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "evach-icecrown",
-            "name": "Evach",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:53.822Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "evach-icecrown",
-            "name": "Evach",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:54.326Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "evacdh-hyjal",
-            "name": "Evacdh",
-            "realm": "Hyjal"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:54.492Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "evacdh-hyjal",
-            "name": "Evacdh",
-            "realm": "Hyjal"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:54.963Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216337585_hppej1ihl",
-            "displayName": "Garro",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:54.963Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "garronan-icecrown",
-            "name": "Garronan",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:55.121Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "garronan-icecrown",
-            "name": "Garronan",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:55.617Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216446328_qdqdt6rbf",
-            "displayName": "Zalea",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:55.617Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "zalea-icecrown",
-            "name": "Zalea",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:55.770Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "zalea-icecrown",
-            "name": "Zalea",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:56.272Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1785285351142_7ebkvjj6h",
-            "displayName": "Prof",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:56.272Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "omegadnc-area52",
-            "name": "Omegadnc",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:56.441Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "omegadnc-area52",
-            "name": "Omegadnc",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:56.924Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "haireater-area52",
-            "name": "Haireater",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:57.049Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "haireater-area52",
-            "name": "Haireater",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:57.519Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781745234340_o5xj0a79o",
-            "displayName": "Rice",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:57.519Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bestricer-frostmane",
-            "name": "Bestricer",
-            "realm": "Frostmane"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:57.671Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bestricer-frostmane",
-            "name": "Bestricer",
-            "realm": "Frostmane"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:58.142Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ricemachnedk-lothar",
-            "name": "Ricemachnedk",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:58.287Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ricemachnedk-lothar",
-            "name": "Ricemachnedk",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:58.761Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bestricer-lothar",
-            "name": "Bestricer",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:58.903Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bestricer-lothar",
-            "name": "Bestricer",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:59.390Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ricemachinex-lothar",
-            "name": "Ricemachinex",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:03:59.537Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ricemachinex-lothar",
-            "name": "Ricemachinex",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:00.003Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1759366176783_piimetwsm",
-            "displayName": "Mochi",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:00.003Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "mochikat-icecrown",
-            "name": "Mochikat",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:00.175Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "mochikat-icecrown",
-            "name": "Mochikat",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:00.632Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1773413029902_gbxr6zkxs",
-            "displayName": "Bus",
-            "characterCount": 6
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:00.632Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-onyxia",
-            "name": "Bus",
-            "realm": "onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:00.802Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-onyxia",
-            "name": "Bus",
-            "realm": "onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:01.265Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-arygos",
-            "name": "Bus",
-            "realm": "arygos"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:01.432Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-arygos",
-            "name": "Bus",
-            "realm": "arygos"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:01.920Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-bladefist",
-            "name": "Bus",
-            "realm": "bladefist"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:02.054Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-bladefist",
-            "name": "Bus",
-            "realm": "bladefist"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:02.531Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-anetheron",
-            "name": "Bus",
-            "realm": "Anetheron"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:02.702Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-anetheron",
-            "name": "Bus",
-            "realm": "Anetheron"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:03.200Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-garona",
-            "name": "Bus",
-            "realm": "garona"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:03.374Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-garona",
-            "name": "Bus",
-            "realm": "garona"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:03.848Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-icecrown",
-            "name": "Bus",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:03.962Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-icecrown",
-            "name": "Bus",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:04.447Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216240800_8h0v1pp4a",
-            "displayName": "Clandon",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:04.447Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "clandon-icecrown",
-            "name": "Clandon",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:04.563Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "clandon-icecrown",
-            "name": "Clandon",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:05.051Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216424251_v5wyypngs",
-            "displayName": "Rye",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:05.051Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ryeshot-icecrown",
-            "name": "Ryeshot",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:05.202Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ryeshot-icecrown",
-            "name": "Ryeshot",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:05.721Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216307943_b0zfc9fks",
-            "displayName": "KE",
-            "characterCount": 6
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:05.721Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "mutilatee-icecrown",
-            "name": "Mutilatee",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:05.855Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "mutilatee-icecrown",
-            "name": "Mutilatee",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:06.353Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "deevinestorm-illidan",
-            "name": "Deevinestorm",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:06.496Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "deevinestorm-illidan",
-            "name": "Deevinestorm",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:06.959Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "whirlwindd-illidan",
-            "name": "whirlwindd",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:07.104Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "whirlwindd-illidan",
-            "name": "whirlwindd",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:07.583Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "offmeta-illidan",
-            "name": "offmeta",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:07.730Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "offmeta-illidan",
-            "name": "offmeta",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:08.180Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "doomwinds-icecrown",
-            "name": "Doomwinds",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:08.298Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "doomwinds-icecrown",
-            "name": "Doomwinds",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:08.737Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "facemesh-illidan",
-            "name": "Facemesh",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:08.900Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "facemesh-illidan",
-            "name": "Facemesh",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:09.492Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1767573157247_9jd3tqrfa",
-            "displayName": "Ghost",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:09.492Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ghostsham-lothar",
-            "name": "Ghostsham",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:09.626Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ghostsham-lothar",
-            "name": "Ghostsham",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:10.076Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ghðst-lothar",
-            "name": "Ghðst",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:10.137Z",
-          "step": "character-fetch-error",
-          "message": "Character fetch failed",
-          "meta": {
-            "playerId": "ghðst-lothar",
-            "name": "Ghðst",
-            "realm": "Lothar",
-            "error": "HTTP 404 Not Found: {\"code\":404,\"type\":\"BLZWEBAPI00000404\",\"detail\":\"Not Found\"}"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:10.388Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "istariel-lothar",
-            "name": "Istariel",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:10.540Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "istariel-lothar",
-            "name": "Istariel",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:11.044Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1783627646029_5w8ckr7hs",
-            "displayName": "Hubbles",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:11.044Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "hubbles-icecrown",
-            "name": "Hubbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:11.196Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "hubbles-icecrown",
-            "name": "Hubbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:11.674Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "hububbles-icecrown",
-            "name": "Hububbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:11.829Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "hububbles-icecrown",
-            "name": "Hububbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:12.330Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743235147_9k6iszen7",
-            "displayName": "Gachi",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:12.330Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "gachiwl-icecrown",
-            "name": "Gachiwl",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:12.475Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "gachiwl-icecrown",
-            "name": "Gachiwl",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:12.946Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216388913_0s8m6emsn",
-            "displayName": "Oregano",
-            "characterCount": 6
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:12.946Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganow-icecrown",
-            "name": "Oreganow",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:13.088Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganow-icecrown",
-            "name": "Oreganow",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:13.618Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganosh-icecrown",
-            "name": "Oreganosh",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:13.767Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganosh-icecrown",
-            "name": "Oreganosh",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:14.200Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganodk-icecrown",
-            "name": "Oreganodk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:14.354Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganodk-icecrown",
-            "name": "Oreganodk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:14.814Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganomk-icecrown",
-            "name": "Oreganomk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:15.005Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganomk-icecrown",
-            "name": "Oreganomk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:15.456Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganor-icecrown",
-            "name": "Oreganor",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:15.572Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganor-icecrown",
-            "name": "Oreganor",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:16.028Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganom-icecrown",
-            "name": "Oreganom",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:16.146Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganom-icecrown",
-            "name": "Oreganom",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:16.654Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743198623_s16k6jjjn",
-            "displayName": "Phungus",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:16.654Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungerclap-icecrown",
-            "name": "Phungerclap",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:16.818Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungerclap-icecrown",
-            "name": "Phungerclap",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:17.320Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungus-tichondrius",
-            "name": "Phungus",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:17.493Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungus-tichondrius",
-            "name": "Phungus",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:17.949Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungores-illidan",
-            "name": "Phungores",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:18.077Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungores-illidan",
-            "name": "Phungores",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:18.537Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungku-area52",
-            "name": "Phungku",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:18.659Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungku-area52",
-            "name": "Phungku",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:19.095Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743280422_5624k6p1p",
-            "displayName": "Keatz",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:19.095Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "keattz-lothar",
-            "name": "Keattz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:19.261Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "keattz-lothar",
-            "name": "Keattz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:19.753Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "keatzz-lothar",
-            "name": "Keatzz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:19.906Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "keatzz-lothar",
-            "name": "Keatzz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:20.369Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "keattzxd-lothar",
-            "name": "Keattzxd",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:20.541Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "keattzxd-lothar",
-            "name": "Keattzxd",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:21.019Z",
-          "step": "enrichment",
-          "message": "Completed gear enrichment",
-          "meta": {
-            "queriedCharacters": 66,
-            "failedLookupCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:21.020Z",
-          "step": "private-write",
-          "message": "Wrote private filtered roster",
-          "meta": {
-            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/backend/data/roster.filtered.json"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:21.021Z",
-          "step": "public-write",
-          "message": "Wrote public gear snapshot",
-          "meta": {
-            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/frontend/public/data/gear.json"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:21.022Z",
-          "step": "public-write",
-          "message": "Wrote public character CSV",
-          "meta": {
-            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/frontend/public/data/characters.csv"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T09:04:21.022Z",
-          "step": "run-end",
-          "message": "Finished roster pipeline",
-          "meta": {
-            "success": true,
-            "error": null
-          }
-        }
-      ],
-      "summary": {
-        "memberCount": 25,
-        "characterCount": 68,
-        "failedLookupCount": 2
-      }
-    },
-    {
-      "runId": "1791705928434-0ydog4ky",
-      "startedAt": "2026-10-11T08:05:28.434Z",
-      "finishedAt": "2026-10-11T08:06:13.402Z",
-      "success": true,
-      "error": null,
-      "actions": [
-        {
-          "timestamp": "2026-10-11T08:05:28.434Z",
-          "step": "run-start",
-          "message": "Started roster pipeline",
-          "meta": {
-            "region": "us",
-            "locale": "en_US",
-            "delayMs": 250,
-            "retentionDays": 7
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:28.434Z",
-          "step": "wowutils-fetch",
-          "message": "Fetching wowutils roster",
-          "meta": {}
-        },
-        {
-          "timestamp": "2026-10-11T08:05:28.953Z",
-          "step": "wowutils-fetch",
-          "message": "Received wowutils roster response",
-          "meta": {
-            "status": 200
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.064Z",
-          "step": "wowutils-parse",
-          "message": "Parsed wowutils roster JSON",
-          "meta": {}
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.065Z",
-          "step": "roster-filter",
-          "message": "Filtered roster to main/alt characters",
-          "meta": {
-            "members": 25,
-            "characters": 68
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.065Z",
-          "step": "blizzard-oauth",
-          "message": "Requesting Blizzard OAuth token",
-          "meta": {
-            "region": "us"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.378Z",
-          "step": "blizzard-oauth",
-          "message": "Received Blizzard OAuth token",
-          "meta": {}
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.378Z",
-          "step": "enrichment",
-          "message": "Starting gear enrichment",
-          "meta": {
-            "members": 25,
-            "characters": 68
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.378Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216411279_pm2clsz2j",
-            "displayName": "Rad",
-            "characterCount": 5
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.378Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radel-icecrown",
-            "name": "Radel",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:29.896Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radel-icecrown",
-            "name": "Radel",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:30.466Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radpal-icecrown",
-            "name": "Radpal",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:30.601Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radpal-icecrown",
-            "name": "Radpal",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:31.218Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radmonk-icecrown",
-            "name": "Radmonk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:31.385Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radmonk-icecrown",
-            "name": "Radmonk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:32.009Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "raddru-icecrown",
-            "name": "Raddru",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:32.141Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "raddru-icecrown",
-            "name": "Raddru",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:32.638Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "radwar-icecrown",
-            "name": "Radwar",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:32.800Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "radwar-icecrown",
-            "name": "Radwar",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:33.289Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216323679_smo2r57xi",
-            "displayName": "Finest",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:33.289Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "finesthour-icecrown",
-            "name": "Finesthour",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:33.441Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "finesthour-icecrown",
-            "name": "Finesthour",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:33.966Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743100147_iulkrccr1",
-            "displayName": "Horchata",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:33.966Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "horcchata-tichondrius",
-            "name": "Horcchata",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:34.250Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "horcchata-tichondrius",
-            "name": "Horcchata",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:34.708Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743309503_cvkku16k1",
-            "displayName": "Jordan",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:34.708Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "jordh-bleedinghollow",
-            "name": "Jordh",
-            "realm": "Bleeding Hollow"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:34.805Z",
-          "step": "character-fetch-error",
-          "message": "Character fetch failed",
-          "meta": {
-            "playerId": "jordh-bleedinghollow",
-            "name": "Jordh",
-            "realm": "Bleeding Hollow",
-            "error": "HTTP 404 Not Found: {\"code\":404,\"type\":\"BLZWEBAPI00000404\",\"detail\":\"Not Found\"}"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:35.055Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216287942_kq1wwe533",
-            "displayName": "Chicken",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:35.055Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "chickenism-icecrown",
-            "name": "Chickenism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:35.204Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "chickenism-icecrown",
-            "name": "Chickenism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:35.716Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "vokerism-icecrown",
-            "name": "Vokerism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:35.849Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "vokerism-icecrown",
-            "name": "Vokerism",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:36.308Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "priestism-icecrown",
-            "name": "Priestism",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:36.454Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "priestism-icecrown",
-            "name": "Priestism",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:36.953Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1767572969876_rn5ez2dmn",
-            "displayName": "Feen",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:36.953Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "greenashen-stormrage",
-            "name": "Greenashen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:37.048Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "greenashen-stormrage",
-            "name": "Greenashen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:37.544Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "glaeder-tichondrius",
-            "name": "glaeder",
-            "realm": "tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:37.667Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "glaeder-tichondrius",
-            "name": "glaeder",
-            "realm": "tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:38.150Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "mfeen-stormrage",
-            "name": "mfeen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:38.308Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "mfeen-stormrage",
-            "name": "mfeen",
-            "realm": "Stormrage"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:38.781Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216361768_00n9vuqji",
-            "displayName": "Kovu",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:38.781Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovuker-ragnaros",
-            "name": "Kovuker",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:38.949Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovuker-ragnaros",
-            "name": "Kovuker",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:39.395Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovu-ragnaros",
-            "name": "Kovu",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:39.522Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovu-ragnaros",
-            "name": "Kovu",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:40.051Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovupally-ragnaros",
-            "name": "Kovupally",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:40.182Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovupally-ragnaros",
-            "name": "Kovupally",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:40.674Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "kovundd-ragnaros",
-            "name": "Kovundd",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:40.792Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "kovundd-ragnaros",
-            "name": "Kovundd",
-            "realm": "Ragnaros"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:41.309Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216247921_vlliy12i4",
-            "displayName": "Xaidra",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:41.309Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "xaidra-icecrown",
-            "name": "Xaidra",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:41.456Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "xaidra-icecrown",
-            "name": "Xaidra",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:41.921Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "xaida-onyxia",
-            "name": "Xaida",
-            "realm": "Onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:42.103Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "xaida-onyxia",
-            "name": "Xaida",
-            "realm": "Onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:42.568Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216331255_cb22luu4k",
-            "displayName": "Pike",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:42.568Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "hotdogman-lothar",
-            "name": "Hotdogman",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:42.716Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "hotdogman-lothar",
-            "name": "Hotdogman",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:43.207Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "gampshwago-icecrown",
-            "name": "Gampshwago",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:43.396Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "gampshwago-icecrown",
-            "name": "Gampshwago",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:43.860Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "namswoam-icecrown",
-            "name": "Namswoam",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:44.002Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "namswoam-icecrown",
-            "name": "Namswoam",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:44.537Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "miamiganster-icecrown",
-            "name": "Miamiganster",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:44.708Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "miamiganster-icecrown",
-            "name": "Miamiganster",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:45.298Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1763000067630_z8p57awbe",
-            "displayName": "Evac",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:45.298Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "evach-icecrown",
-            "name": "Evach",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:45.460Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "evach-icecrown",
-            "name": "Evach",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:45.936Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "evacdh-hyjal",
-            "name": "Evacdh",
-            "realm": "Hyjal"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:46.098Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "evacdh-hyjal",
-            "name": "Evacdh",
-            "realm": "Hyjal"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:46.609Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216337585_hppej1ihl",
-            "displayName": "Garro",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:46.609Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "garronan-icecrown",
-            "name": "Garronan",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:46.763Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "garronan-icecrown",
-            "name": "Garronan",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:47.269Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216446328_qdqdt6rbf",
-            "displayName": "Zalea",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:47.269Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "zalea-icecrown",
-            "name": "Zalea",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:47.426Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "zalea-icecrown",
-            "name": "Zalea",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:47.917Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1785285351142_7ebkvjj6h",
-            "displayName": "Prof",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:47.917Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "omegadnc-area52",
-            "name": "Omegadnc",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:48.056Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "omegadnc-area52",
-            "name": "Omegadnc",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:48.578Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "haireater-area52",
-            "name": "Haireater",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:48.766Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "haireater-area52",
-            "name": "Haireater",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:49.262Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781745234340_o5xj0a79o",
-            "displayName": "Rice",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:49.262Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bestricer-frostmane",
-            "name": "Bestricer",
-            "realm": "Frostmane"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:49.463Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bestricer-frostmane",
-            "name": "Bestricer",
-            "realm": "Frostmane"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:49.975Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ricemachnedk-lothar",
-            "name": "Ricemachnedk",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:50.108Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ricemachnedk-lothar",
-            "name": "Ricemachnedk",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:50.572Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bestricer-lothar",
-            "name": "Bestricer",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:50.741Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bestricer-lothar",
-            "name": "Bestricer",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:51.217Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ricemachinex-lothar",
-            "name": "Ricemachinex",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:51.439Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ricemachinex-lothar",
-            "name": "Ricemachinex",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:51.880Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1759366176783_piimetwsm",
-            "displayName": "Mochi",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:51.880Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "mochikat-icecrown",
-            "name": "Mochikat",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:52.052Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "mochikat-icecrown",
-            "name": "Mochikat",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:52.542Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1773413029902_gbxr6zkxs",
-            "displayName": "Bus",
-            "characterCount": 6
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:52.542Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-onyxia",
-            "name": "Bus",
-            "realm": "onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:52.706Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-onyxia",
-            "name": "Bus",
-            "realm": "onyxia"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:53.170Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-arygos",
-            "name": "Bus",
-            "realm": "arygos"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:53.340Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-arygos",
-            "name": "Bus",
-            "realm": "arygos"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:53.823Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-bladefist",
-            "name": "Bus",
-            "realm": "bladefist"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:53.971Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-bladefist",
-            "name": "Bus",
-            "realm": "bladefist"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:54.458Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-anetheron",
-            "name": "Bus",
-            "realm": "Anetheron"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:54.593Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-anetheron",
-            "name": "Bus",
-            "realm": "Anetheron"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:55.100Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-garona",
-            "name": "Bus",
-            "realm": "garona"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:55.247Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-garona",
-            "name": "Bus",
-            "realm": "garona"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:55.817Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "bus-icecrown",
-            "name": "Bus",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:55.988Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "bus-icecrown",
-            "name": "Bus",
-            "realm": "icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:56.513Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216240800_8h0v1pp4a",
-            "displayName": "Clandon",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:56.513Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "clandon-icecrown",
-            "name": "Clandon",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:56.633Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "clandon-icecrown",
-            "name": "Clandon",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:57.091Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216424251_v5wyypngs",
-            "displayName": "Rye",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:57.091Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ryeshot-icecrown",
-            "name": "Ryeshot",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:57.242Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ryeshot-icecrown",
-            "name": "Ryeshot",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:57.781Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216307943_b0zfc9fks",
-            "displayName": "KE",
-            "characterCount": 6
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:57.781Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "mutilatee-icecrown",
-            "name": "Mutilatee",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:57.909Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "mutilatee-icecrown",
-            "name": "Mutilatee",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:58.407Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "deevinestorm-illidan",
-            "name": "Deevinestorm",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:58.536Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "deevinestorm-illidan",
-            "name": "Deevinestorm",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:59.035Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "whirlwindd-illidan",
-            "name": "whirlwindd",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:59.168Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "whirlwindd-illidan",
-            "name": "whirlwindd",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:59.745Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "offmeta-illidan",
-            "name": "offmeta",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:05:59.927Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "offmeta-illidan",
-            "name": "offmeta",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:00.405Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "doomwinds-icecrown",
-            "name": "Doomwinds",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:00.546Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "doomwinds-icecrown",
-            "name": "Doomwinds",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:00.988Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "facemesh-illidan",
-            "name": "Facemesh",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:01.141Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "facemesh-illidan",
-            "name": "Facemesh",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:01.676Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1767573157247_9jd3tqrfa",
-            "displayName": "Ghost",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:01.676Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ghostsham-lothar",
-            "name": "Ghostsham",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:01.825Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "ghostsham-lothar",
-            "name": "Ghostsham",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:02.317Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "ghðst-lothar",
-            "name": "Ghðst",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:02.380Z",
-          "step": "character-fetch-error",
-          "message": "Character fetch failed",
-          "meta": {
-            "playerId": "ghðst-lothar",
-            "name": "Ghðst",
-            "realm": "Lothar",
-            "error": "HTTP 404 Not Found: {\"code\":404,\"type\":\"BLZWEBAPI00000404\",\"detail\":\"Not Found\"}"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:02.630Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "istariel-lothar",
-            "name": "Istariel",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:02.802Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "istariel-lothar",
-            "name": "Istariel",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:03.292Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1783627646029_5w8ckr7hs",
-            "displayName": "Hubbles",
-            "characterCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:03.292Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "hubbles-icecrown",
-            "name": "Hubbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:03.449Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "hubbles-icecrown",
-            "name": "Hubbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:03.919Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "hububbles-icecrown",
-            "name": "Hububbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:04.084Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "hububbles-icecrown",
-            "name": "Hububbles",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:04.566Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743235147_9k6iszen7",
-            "displayName": "Gachi",
-            "characterCount": 1
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:04.566Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "gachiwl-icecrown",
-            "name": "Gachiwl",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:04.697Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "gachiwl-icecrown",
-            "name": "Gachiwl",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:05.215Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1755216388913_0s8m6emsn",
-            "displayName": "Oregano",
-            "characterCount": 6
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:05.215Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganow-icecrown",
-            "name": "Oreganow",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:05.360Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganow-icecrown",
-            "name": "Oreganow",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:05.891Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganosh-icecrown",
-            "name": "Oreganosh",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:06.030Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganosh-icecrown",
-            "name": "Oreganosh",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:06.472Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganodk-icecrown",
-            "name": "Oreganodk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:06.645Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganodk-icecrown",
-            "name": "Oreganodk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:07.095Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganomk-icecrown",
-            "name": "Oreganomk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:07.231Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganomk-icecrown",
-            "name": "Oreganomk",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:07.686Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganor-icecrown",
-            "name": "Oreganor",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:07.842Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganor-icecrown",
-            "name": "Oreganor",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:08.409Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "oreganom-icecrown",
-            "name": "Oreganom",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:08.556Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "oreganom-icecrown",
-            "name": "Oreganom",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:09.008Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743198623_s16k6jjjn",
-            "displayName": "Phungus",
-            "characterCount": 4
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:09.008Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungerclap-icecrown",
-            "name": "Phungerclap",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:09.154Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungerclap-icecrown",
-            "name": "Phungerclap",
-            "realm": "Icecrown"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:09.607Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungus-tichondrius",
-            "name": "Phungus",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:09.739Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungus-tichondrius",
-            "name": "Phungus",
-            "realm": "Tichondrius"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:10.216Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungores-illidan",
-            "name": "Phungores",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:10.368Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungores-illidan",
-            "name": "Phungores",
-            "realm": "Illidan"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:10.865Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "phungku-area52",
-            "name": "Phungku",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:10.996Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "phungku-area52",
-            "name": "Phungku",
-            "realm": "Area 52"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:11.425Z",
-          "step": "member-enrichment",
-          "message": "Processing member",
-          "meta": {
-            "memberId": "member_1781743280422_5624k6p1p",
-            "displayName": "Keatz",
-            "characterCount": 3
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:11.425Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "keattz-lothar",
-            "name": "Keattz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:11.555Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "keattz-lothar",
-            "name": "Keattz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:12.066Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "keatzz-lothar",
-            "name": "Keatzz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:12.259Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "keatzz-lothar",
-            "name": "Keatzz",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:12.737Z",
-          "step": "character-fetch",
-          "message": "Fetching character equipment",
-          "meta": {
-            "playerId": "keattzxd-lothar",
-            "name": "Keattzxd",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:12.909Z",
-          "step": "character-fetch",
-          "message": "Fetched character equipment",
-          "meta": {
-            "playerId": "keattzxd-lothar",
-            "name": "Keattzxd",
-            "realm": "Lothar"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:13.397Z",
-          "step": "enrichment",
-          "message": "Completed gear enrichment",
-          "meta": {
-            "queriedCharacters": 66,
-            "failedLookupCount": 2
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:13.398Z",
-          "step": "private-write",
-          "message": "Wrote private filtered roster",
-          "meta": {
-            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/backend/data/roster.filtered.json"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:13.400Z",
-          "step": "public-write",
-          "message": "Wrote public gear snapshot",
-          "meta": {
-            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/frontend/public/data/gear.json"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:13.401Z",
-          "step": "public-write",
-          "message": "Wrote public character CSV",
-          "meta": {
-            "path": "/home/runner/work/vindi-roster-monitor/vindi-roster-monitor/frontend/public/data/characters.csv"
-          }
-        },
-        {
-          "timestamp": "2026-10-11T08:06:13.402Z",
           "step": "run-end",
           "message": "Finished roster pipeline",
           "meta": {
