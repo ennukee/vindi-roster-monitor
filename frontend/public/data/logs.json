@@ -1,7 +1,51 @@
 {
-  "updatedAt": "2026-10-30T12:04:57.895Z",
+  "updatedAt": "2026-10-30T13:02:57.428Z",
   "retentionDays": 7,
   "runs": [
+    {
+      "runId": "1793365376910-ejbpm0qm",
+      "startedAt": "2026-10-30T13:02:56.910Z",
+      "finishedAt": "2026-10-30T13:02:57.382Z",
+      "success": false,
+      "error": "HTTP 503 Service Unavailable: {\"error\":{\"code\":\"api_overloaded\",\"message\":\"The API is temporarily overloaded.\",\"reason\":null,\"characterName\":null,\"requestId\":\"req_763356facff1\"}}",
+      "actions": [
+        {
+          "timestamp": "2026-10-30T13:02:56.910Z",
+          "step": "run-start",
+          "message": "Started roster pipeline",
+          "meta": {
+            "region": "us",
+            "locale": "en_US",
+            "delayMs": 250,
+            "retentionDays": 7
+          }
+        },
+        {
+          "timestamp": "2026-10-30T13:02:56.910Z",
+          "step": "wowutils-fetch",
+          "message": "Fetching wowutils roster",
+          "meta": {}
+        },
+        {
+          "timestamp": "2026-10-30T13:02:57.382Z",
+          "step": "run-error",
+          "message": "Pipeline failed",
+          "meta": {
+            "error": "HTTP 503 Service Unavailable: {\"error\":{\"code\":\"api_overloaded\",\"message\":\"The API is temporarily overloaded.\",\"reason\":null,\"characterName\":null,\"requestId\":\"req_763356facff1\"}}"
+          }
+        },
+        {
+          "timestamp": "2026-10-30T13:02:57.382Z",
+          "step": "run-end",
+          "message": "Finished roster pipeline",
+          "meta": {
+            "success": false,
+            "error": "HTTP 503 Service Unavailable: {\"error\":{\"code\":\"api_overloaded\",\"message\":\"The API is temporarily overloaded.\",\"reason\":null,\"characterName\":null,\"requestId\":\"req_763356facff1\"}}"
+          }
+        }
+      ],
+      "summary": {}
+    },
     {
       "runId": "1793361852954-2o34lj9e",
       "startedAt": "2026-10-30T12:04:12.954Z",
